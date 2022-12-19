@@ -12,12 +12,7 @@ fn main() -> ! {
     let mut out1 = pins.d3.into_output();
     let mut out2 = pins.d4.into_output();
     let mut out3 = pins.d5.into_output();
-    /*
-        TODO:
-         type annotations neededrustcClick for full compiler diagnostic
-    main.rs(18, 22): try using a fully qualified path to specify the expected types: `<avr_hal_generic::port::Pin<Input<Floating>, PD2> as Into<T>>::into(`, `)`
-
-        */
+    
     let in1 = pins.d2.into_floating_input();
 
     loop {
